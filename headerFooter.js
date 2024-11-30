@@ -49,10 +49,10 @@ class specialFooter extends HTMLElement{
         
             <div id="footer-fourth-box" class="footer-divs">
                 <div> <h3>Social media</h3></div>
-               <div id="footer-social-media-icons">  <a href=""> <i class="fa-brands fa-instagram"></i></a>
-                <a href=""> <i class="fa-brands fa-square-facebook"></i></a>
+               <div id="footer-social-media-icons">  <a href="https://www.instagram.com/vicilla_store/profilecard/?igsh=dm40YTNjZnluc25p"> <i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?viewas=100000686899395&id=61569294287349"> <i class="fa-brands fa-square-facebook"></i></a>
                
-                 <a href=""><i class="fa-brands fa-youtube"></i></a></div>
+                 <a href="https://www.youtube.com/@VicillaStore"><i class="fa-brands fa-youtube"></i></a></div>
               
                 
             </div>
