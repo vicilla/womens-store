@@ -1,0 +1,776 @@
+
+:root{
+    --navbar-background-color: black;
+    --navbar-text-color1:rgb(255, 255, 255);
+    --navbar-text-hover-color:white;
+    --sidebar-background-color:#ce92b7;
+    --sidebar-background-hover-color:white;
+    --sidebar-text-color:black;
+    --xmark-background-color:#DFB6B2;
+    --sidebar-a-border-color:white;
+    --block-one-background:#8a526e;
+}
+.cormorant-garamond-light {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+.cinzel {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .section-p1{
+    padding: 20px 60px ;
+  }
+  .box-p1{
+padding: 10px 15px;
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1.05rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100dvw;
+    height: auto;
+    overflow-x: hidden;
+    background-image: url(pic/pexels-codioful-7130555.jpg);
+}
+
+.re_nav {
+    width: 100%;
+    background-color: var(--navbar-background-color);
+    padding-inline: 1rem;
+    padding-right: 3rem;
+    height: 8vh;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    border-bottom: 1px solid gray;
+   
+}
+
+.re_nav .re_sidebarone {
+    display: flex;
+    gap: 4rem;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.re_nav ul li {
+    list-style: none;
+}
+
+.re_nav a {
+    text-decoration: none;
+    display: inline-block; 
+    transition: transform 0.2s ease; 
+    color:var(--navbar-text-color1);
+    font-family: "Cinzel", serif;
+    letter-spacing: 1.2px;
+}
+.re_nav .re_sidebarone li:nth-child(1) {
+    margin-right: auto;
+
+}
+#brandname{
+    font-weight: 550;
+font-size:2rem;
+color: rgb(241, 228, 184);
+}
+
+
+.re_nav .re_sidebarone a:hover {
+    color: var(--navbar-text-hover-color);
+    transform: scale(1.1); 
+}
+.re_menu_icon{
+    display: none;
+}
+
+.re_sidebar{
+   
+    position: fixed;
+    top: 0;
+    right:0;
+    height:100vh;
+    width:18rem;
+    z-index: 999;
+    box-shadow: -1px 1px 20px rgb(71, 69, 69);
+    /* background-color:white ; */
+    /* background-color: rgb(255, 255, 255); */
+    background-color: var(--sidebar-background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 0rem;
+    transform: translateX(20rem);
+    transition: all .4s ease-in-out;
+    
+}
+.re_sidebar li{
+    width: 100%;
+}
+.re_sidebar a{
+  
+   
+    border-bottom: 1px solid var(--sidebar-a-border-color);
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+   
+}
+.re_sidebar a:hover{
+background-color: var(--sidebar-background-hover-color);
+}
+
+/* .re_sidebar li:nth-child(2){
+    
+} */
+
+#footer .fa-solid {
+    font-size: 2rem;
+}
+
+.re_xmark_icon{
+  
+    padding: 1rem;
+    padding-block: .5rem;
+    background-color: var(--xmark-background-color);
+    
+}
+
+.re_show_sidebar{
+    transform: translateX(0rem);
+}
+
+#main-banner{
+  /* background-image: url(pic/pexels-828860-2697786.jpg); */
+ /* background: rgb(233,215,242); */
+  background: linear-gradient(90deg, rgba(233,215,242,1) 0%, rgba(240,228,248,1) 16%, rgba(237,223,246,1) 54%, rgba(235,219,244,1) 84%);;
+  height: 92vh;
+  background-repeat: no-repeat;
+  background-size:cover ;
+  background-position:100% 30%;
+  color: rgb(12, 12, 12);
+  font-stretch: expanded;
+  letter-spacing: 4px;
+  
+  padding-left: 100px;
+  position: relative;
+  overflow: hidden;
+}
+#main-banner h2{
+    font-size: 3.8rem;
+    letter-spacing: 10px;
+    opacity: 0;
+    z-index: 999;
+}
+#h21{
+    animation: side-anim .5s ease-in forwards;
+    z-index: 999;
+}
+#h23{
+    animation: side-anim .5s 1.5s ease-in forwards;
+    z-index: 2;
+}
+#main-banner #h22{
+    font-size: 7rem;
+ color:orange;
+ 
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ /* font-family: "Cinzel", serif; */
+ /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    letter-spacing: 24px;
+    animation: side-anim 1s .5s ease-in forwards;
+    opacity: 0;
+    z-index: 2;
+
+}
+#slogan-one{
+    margin-bottom: 3rem;
+    margin-top: 0rem;
+}
+#main-banner h1{
+    font-size: 7rem;
+    font-family: "Cinzel", serif;
+    color:rgb(81, 131, 81);
+    animation: bottom-anim 1s 2s ease-in forwards;
+    opacity: 0;
+    z-index: 2;
+/* -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black; */
+/* text-shadow: 2px 2px 15px black; */
+}
+#red-women{
+    position: absolute;
+    bottom: -100px;
+    right:100px;
+    animation: bottom-anim1 1.5s .5s ease-in forwards;
+    opacity: 0;
+}
+
+
+@keyframes bottom-anim{
+0%{
+    opacity: 0;
+    transform: translateY(5rem);
+}
+100%{
+    opacity: 1;
+    transform:translateY(0rem)
+}
+}
+@keyframes bottom-anim1{
+    0%{
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0rem)
+    }
+    }
+@keyframes side-anim{
+    0%{
+        opacity: 0;
+  
+    }
+    100%{
+        opacity: 1;
+
+    }
+    }
+
+
+#new-arrivals{
+background-color: #eecde1;
+text-align: center;
+padding-block: 2rem;
+}
+#new-arrivals h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+#new-arrivals-holder{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+#new-arrival {
+    margin: 40px 20px;
+    height: 18rem;
+ 
+    min-width: 12rem;
+    background-color: aliceblue;
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: column;
+ /* flex-basis: 20rem; */
+    justify-content: center;
+    overflow: hidden;
+   
+  
+}
+
+.product-image-holder{
+    width: 90%;
+    height: 90%;
+    padding-top: 4px;
+    background-color: #ce92b7;
+    margin-inline: auto;
+    margin-block: .6rem;
+  position: relative;
+    
+}
+#new-arrival img{
+position: absolute;
+bottom: 0;
+left:0;
+    width: 90%;
+height: 90%;
+
+
+
+}
+#new-arrival p{
+    margin: 4px 4px;
+font-size: .9rem;
+text-align: start;
+color: darkslategrey;
+font-weight: 700;
+
+}
+.product-details{
+    background-color: #DFB6B2;
+    /* background-color: white; */
+    padding-top: .5rem;
+    padding-inline: 1rem;
+    padding-bottom:.5rem;
+    position: relative;
+
+}
+
+.fa-solid{
+    font-size: .7rem;
+}
+.fa-star{
+    color: orange;
+}
+.row-two{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#new-arrival #price{
+    color: darkslategrey;
+}
+
+#cart-btn {
+    height: 1.7rem;
+    width: 1.7rem;
+    
+    background-color: rgb(224, 235, 235);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+position: relative;
+}
+
+#cart-btn img {
+    width: 100%; 
+    height: auto;
+    max-height: 100%; 
+    object-fit: contain; 
+}
+.outer-cart-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    margin-inline: auto;
+    margin-top: .8rem;
+}
+
+
+
+#combos{
+    background-color: black;
+    color: white;
+    padding:2rem 4rem;
+}
+
+#combos h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+#really-combos{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+#really{
+    font-size: 4rem;
+    color: rgb(235, 135, 210);
+    
+}
+
+.combo-box{
+    width: 100%;
+    height: 20rem;
+    background-color: aliceblue;
+    margin-block: 1rem;
+    color:black;
+    position: relative;
+ 
+}
+#combo-holder{
+    display: flex;
+    flex-direction: column;
+
+}
+/* #combo-holder .combo-box.text-div{
+    width: ;
+} */
+#combo-holder .combo-box img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+width: 30%;
+height: auto;
+
+}
+
+#combo-holder .combo-box h1{
+
+ 
+ padding: 2rem 4rem;
+    font-size: 5rem;
+}
+
+/* #combo-holder .combo-box:nth-child(1) h1{
+    background:url(pic/png/golden);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#combo-holder .combo-box:nth-child(2) h1{
+    background:url(pic/png/golden\ back\ \(3\).jpg) ;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#combo-holder .combo-box:nth-child(3) h1{
+    background:url(pic/png/golden\ back\ \(2\).jpg) ;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+#footer{
+    background-color: rgb(36, 33, 33);
+    color: white;
+   
+    max-width: 100vw;
+    overflow-x:hidden ;
+    display: grid;
+ 
+    
+}
+#footer-part-one{
+  
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 3rem;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    padding-block: 2rem;
+    padding-inline: 4rem;
+    padding-top: 4rem;
+ 
+}
+#footer a{
+    text-decoration: none;
+    color: #eecde1;
+}
+#footer-first-box{
+    flex-basis: 1;
+    width: 25rem;
+}
+.footer-phone-email{
+    display: flex;
+    align-items: center;
+}
+
+#footer div{
+    flex: 1 1 1;
+}
+
+#footer-brand-name{
+    font-family: "Cinzel", serif;
+    font-weight: 550;
+    font-size:2rem;
+    color: rgb(241, 228, 184);
+    margin-bottom: 1.5rem;
+}
+#footer-second-box{
+    display: grid;
+    row-gap: 1rem;
+}
+
+#footer-third-box div{
+  
+    margin-bottom: 1rem;
+}
+.footer-phone-email{
+    display: flex;
+    align-items:center;
+    
+   /* background-color: aqua; */
+    
+}
+#footer-third-box div i{
+    margin-right: .6rem;
+}
+#footer-third-box div .fa-solid {
+    font-size: 1.2rem;
+    align-self:flex-end;
+}
+#location-icon{
+  
+    width: 1.3rem;
+   
+}
+#footer-fourth-box{
+    display: grid;
+ row-gap: 1rem;
+ place-items: center;
+}
+#footer-part-two{
+    text-align: center;
+    padding:2rem;
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+}
+
+.footer-divs{
+    margin-bottom: 3rem;
+
+}
+
+#footer-social-media-icons{
+    display: grid;
+    text-align: center;
+    row-gap: 1rem;
+}
+
+
+@media  screen and (min-width:701px) and (max-width:1000px){
+    .re_removable{
+        display:none;
+    }
+    .re_menu_icon{
+        display: flex;
+    }
+    #red-women{
+        right: -200px;
+        z-index: 1;
+        
+    }
+    #png1-holder{
+        z-index:1;
+      
+    }
+    #combo-holder .combo-box h1{
+        padding: 2rem 4rem;
+           font-size: 4rem;
+           color: #ce92b7;
+       }
+
+
+       #combo-holder .combo-box img{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    width: 40%;
+    height: auto;
+    
+    }
+
+    }
+
+
+    @media only screen and (min-width:701px) and (max-width:900px){
+        #combo-holder .combo-box h1{
+            padding: 2rem 4rem;
+               font-size: 3.5rem;
+               
+              
+        }
+        #combo-holder .combo-box img{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        width: 300px;
+        height: auto;
+        
+        }
+     
+       }
+ 
+
+
+
+
+
+
+
+
+
+/* for mobile size  */
+@media screen and (max-width:700px){
+ 
+
+    .re_removable{
+        display:none;
+    }
+    .re_menu_icon{
+        display: flex;
+    }
+    #main-banner{
+     padding-inline: 20px;
+    }
+    #red-women{
+        right: -200px;
+        z-index: 1;
+        opacity: 1;
+        
+    }
+    #png1-holder{
+        z-index:1;
+        opacity: .4;
+    }
+    #main-banner h2{
+        font-size: 2rem;
+        color: #94567c;
+    }
+    #main-banner #hh2{
+        font-size: 4rem;
+    }
+    #main-banner #h22 {
+        font-size: 3rem;
+      
+    }
+    #main-banner h1 {
+        font-size: 6rem;
+ 
+    }
+
+    #new-arrivals h1{
+        font-size: 2rem;
+        /* margin: 2rem; */
+    }
+     #new-arrivals-holder{
+      
+        flex-wrap:nowrap;
+        background-color: rgb(148, 183, 216);
+        overflow: scroll;
+        max-width: 100vw;
+    } 
+    #combos{
+        padding: 2rem 2rem;
+    }
+
+    #really-combos{
+        font-size: 2.5rem;
+    }
+    #really{
+        font-size: 2.5rem;
+    }
+    
+    #combo-holder{
+      
+        flex-wrap:nowrap;
+        flex-direction: row;
+        overflow-x: scroll;
+        max-width: 100vw;
+        scroll-snap-type: x mandatory;
+    } 
+    .combo-box{
+        overflow-y: hidden;
+        min-width: 100%;
+        /* scroll-snap-align: center;
+        scroll-padding-inline-start:30px ;
+        scroll-snap-stop: start;
+        scroll-behavior: smooth; */
+        height: 20rem;
+        background-color: aliceblue;
+        margin-right: 1rem;
+        color:black;
+        text-align: center;
+    }
+  
+       
+
+
+    #combo-holder .combo-box h1{
+    
+           font-size: 2rem;
+           color: rgb(36, 33, 33);
+           transform: translateY(-15px);
+       padding: 2rem 0;
+       }
+
+    #combo-holder .combo-box img{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -20px;
+    width: 300px;
+    height: auto;
+    
+    }
+
+}
+
+
+@media only screen and (max-width:800px){
+
+    #footer-first-box {
+    
+        width: 20rem;
+    }
+
+    #footer-part-one{
+        text-align: center;
+        padding: 2rem;
+        display: grid;
+
+        
+    }
+    #footer-social-media-icons{
+        width: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+    /* #footer-third-box div .fa-solid {
+        font-size: 1.2rem;
+        align-self:flex-start;
+    } */
+    #footer-third-box{
+ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+#footer-part-two{
+    padding: 2rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+
+
+
+
+@media only screen and(max-width:500px){
+    #footer-fourth-box{
+       justify-self: center;
+
+    }
+
+}
+@media only screen and (max-width:400px){
+    #footer h3,a{
+        font-size:.9rem;
+      
+    }
+    #footer-first-box{
+        width: 100%;
+    }
+    }

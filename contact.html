@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://kit.fontawesome.com/fa8acceed4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/fa8acceed4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <special-header></special-header>
+
+
+    <div class="container">
+         
+        <div class="wrapper">
+           <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="4164e7c8-814e-4d33-a0ef-fc572a4708fc">
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input id="nameinput" type="text" name="name" class="inputs"> <span id="namespan"> </span>
+            </div>
+            <div class="input-group">
+                <label for="phno">Phone Number</label>
+                <input id="phnoinput" type="text" name="phno" class="inputs"><span id="phnospan"> </span>
+            </div>
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input id="emailinput" type="text" name="email" class="inputs"><span id="emailspan"> </span>
+            </div>
+            <div class="input-group">
+                <label for="message">Message</label>
+            <textarea id="msginput" name="message"  cols="40" rows="7" class="inputs"></textarea>
+            <span id="msgspan"> </span>
+            </div>
+
+            <button onclick="return validateform()" id="submitbtn">Submit</button>
+            <span id="submitspan"></span>
+        </form>
+        </div>
+
+<div class="slogan">
+    <div class="text"><h2 id="stay">Stay</h2>
+        <h1>Connected </h1>
+        <h2 id="stay">with us</h2></div>
+    
+
+</div>
+
+
+    </div>
+
+<!-- 
+    <section id="about">
+        <h2>About Davy Stores</h2>
+        <p>We're your personal shopping assistant, dedicated to finding the best products on Amazon. We scour the internet to bring you high-quality, affordable items that enhance your life.</p>
+        <p>Why Choose Davy Stores?</p>
+        <ul>
+          <li>Curated Selection: We carefully select products based on quality, value, and customer reviews.</li>
+          <li>Honest Reviews: We provide unbiased opinions to help you make informed decisions.</li>
+          <li>Affiliate Partnerships: As an Amazon Affiliate, we may earn a commission on purchases made through our links. This helps us continue to provide valuable content and recommendations.</li>
+        </ul>
+      </section> -->
+      <section id="about">
+        <div class="about-content">
+          <h2>About us </h2>
+          <p>We're your personal shopping assistant, dedicated to finding the best products on Amazon. We scour the internet to bring you high-quality, affordable items that enhance your life.</p>
+          <p>Why Choose Vicilla ?</p>
+          <ul>
+            <li>Curated Selection: We carefully select products based on quality, value, and customer reviews.</li>
+            <li>Honest Reviews: We provide unbiased opinions to help you make informed decisions.</li>
+            <li>Affiliate Partnerships: As an Amazon Affiliate, we may earn a commission on purchases made through our links. This helps us continue to provide valuable content and recommendations.</li>
+          </ul>
+        </div>
+      </section>
+   
+
+      <section id="terms">
+        <div class="terms-content">
+          <h2>Terms and Conditions</h2>
+          <p>Please read these Terms and Conditions carefully before using our website.</p>
+      
+          <p>1. Acceptance of Terms</p>
+          <p>By accessing or using our website, you agree to be bound by these Terms and Conditions. If you disagree with any part of these terms, please do not use our website.</p>
+      
+          <p>2. Affiliate Marketing</p>
+          <p>Our website participates in affiliate marketing programs. This means we may earn a commission when you purchase products or services through affiliate links on our website.</p>
+        </div>
+      </section>
+   
+    <special-footer></special-footer>
+
+    <script src="./headerFooter.js"></script>
+    <script src="./scripts/contact.js"></script>
+
+</body>
+</html>
